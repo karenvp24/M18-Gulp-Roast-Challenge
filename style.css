@@ -45,6 +45,7 @@ nav .logo img {
   max-width: 150px;
 }
 /* flex basis on the image container, li */
+
 nav .logo {
   flex-basis: 100%;
   text-align: center;
@@ -156,8 +157,16 @@ footer a {
   }
 }*/
 @media (min-width: 768px) {
+  nav ul{
+    flex-flow: row wrap ;
+    justify-content: center;
 
-
+  }
+  nav .logo {
+    flex-basis: 100%;
+    text-align: center;
+    align-items: flex-end;
+  }
 .product-display{
   flex-direction: row;
 }
@@ -166,13 +175,6 @@ footer a {
   flex: 1;
 
 }
-/*trying to make the image fit in the container but it doesn't work
-.about img{
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-*/
 }
 
 @media (min-width: 992px) {

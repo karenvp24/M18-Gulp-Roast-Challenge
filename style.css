@@ -38,6 +38,7 @@ nav ul {
 nav li {
   margin: 0 1rem 1rem 1rem;
   font-size: 1.3rem;
+  text-align: center;
 }
 /* max width on the image in pixels */
 nav .logo img {
@@ -176,7 +177,14 @@ footer a {
 
 @media (min-width: 992px) {
   nav ul{
-    flex-flow: row wrap;
+    flex-flow: row ;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  nav .logo {
+    flex-basis: 100%;
+    text-align: left;
+    align-items: flex-end;
   }
   footer ul{
     flex-flow: row wrap;
@@ -184,8 +192,8 @@ footer a {
   .product-display{
     flex-direction: row;
     width: 100%;
-
   }
+  
 }
 /*
 @media (min-width: 1200) {
